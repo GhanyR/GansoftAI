@@ -1,0 +1,44 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradHD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c084fc;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="radialGlow" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.3);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0);stop-opacity:0" />
+    </radialGradient>
+    <filter id="shadowHD" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="16" stdDeviation="32" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="innerShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="-4" stdDeviation="8" flood-color="#ffffff" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Main background circle with shadow -->
+  <circle cx="512" cy="512" r="480" fill="url(#gradHD)" filter="url(#shadowHD)"/>
+  
+  <!-- Radial glow overlay -->
+  <circle cx="512" cy="512" r="480" fill="url(#radialGlow)"/>
+  
+  <!-- Subtle border highlight -->
+  <circle cx="512" cy="512" r="480" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="4"/>
+  
+  <!-- Letter G with enhanced details -->
+  <g filter="url(#innerShadow)">
+    <path d="M704 368C704 325.82 670.18 292 628 292H396C353.82 292 320 325.82 320 368V656C320 698.18 353.82 732 396 732H628C670.18 732 704 698.18 704 656V544H576V608H640V656C640 660.42 636.42 664 632 664H400C395.58 664 392 660.42 392 656V368C392 363.58 395.58 360 400 360H632C636.42 360 640 363.58 640 368V416H576V480H704V368Z" 
+          fill="white" 
+          stroke="rgba(255,255,255,0.2)" 
+          stroke-width="2"/>
+  </g>
+  
+  <!-- Inner letter highlight -->
+  <path d="M704 368C704 325.82 670.18 292 628 292H396C353.82 292 320 325.82 320 368V656C320 698.18 353.82 732 396 732H628C670.18 732 704 698.18 704 656V544H576V608H640V656C640 660.42 636.42 664 632 664H400C395.58 664 392 660.42 392 656V368C392 363.58 395.58 360 400 360H632C636.42 360 640 363.58 640 368V416H576V480H704V368Z" 
+        fill="none" 
+        stroke="rgba(255,255,255,0.4)" 
+        stroke-width="1"/>
+</svg>
